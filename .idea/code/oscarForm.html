@@ -1,10 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Oscars</title>
 </head>
 <body>
-
+<h1 align="center">Oscars Results Since 1960</h1>
+<div align="center" >
+    <form action="http://titan.dcs.bbk.ac.uk/~jthoma24/oscars/oscars.php"  method="get">
+        <fieldset style="width: max-content" >
+            <legend>Enter Filters</legend>
+            <table>
+                <th></th>
+                <th>Restriction</th>
+                <th></th>
+                <tr>
+                    <td>
+                        <label for="oscars">Year</label>
+                    </td>
+                    <td>
+                        <select id = "yearRestriction" name="yearRestriction">
+                            <option>Contains</option>
+                            <option>None</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" id="year" name="year"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="oscars">Category</label>
+                    </td>
+                    <td>
+                        <select id = "catRestriction" name="catRestriction">
+                            <option>Contains</option>
+                            <option>None</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" id="category" name="category"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="oscars">Info</label>
+                    </td>
+                    <td>
+                        <select id = "infoRestriction" name="infoRestriction">
+                            <option>Contains</option>
+                            <option>None</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" id="info" name="info"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="oscars">Nominee</label>
+                    </td>
+                    <td>
+                        <select id = "nomRestriction" name="nomRestriction">
+                            <option>Contains</option>
+                            <option>None</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" id="nominee" name="nominee"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="oscars">Won?</label>
+                    </td>
+                    <td>
+                        <select id = "wonRestriction" name="Won">
+                            <option>All</option>
+                            <option>Win</option>
+                            <option>No Win</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="submit" value="View Results">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</div>
 </body>
 </html>
